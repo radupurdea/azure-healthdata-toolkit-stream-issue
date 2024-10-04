@@ -1,0 +1,6 @@
+services:
+  healthtoolkit:
+    image: ${DOCKER_REGISTRY-}healthtoolkit
+    build:
+      context: .
+      dockerfile: Api/Dockerfile
