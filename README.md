@@ -2,11 +2,11 @@ Sample repro to aid in debugging for issue: https://github.com/microsoft/azure-h
 
 To reproduce the stream issue, open the `HealthToolkit.sln` and run it using the `docker-compose` profile.
 
-![Run profile](./images/step1.jpg)
+![Run profile](https://github.com/radupurdea/azure-healthdata-toolkit-stream-issue/blob/main/Images/Step1.JPG)
 
 Next, run the HealthToolkit api and copy the URL of the API.
 
-![Copy url](./images/step2.jpg)
+![Copy url](https://github.com/radupurdea/azure-healthdata-toolkit-stream-issue/blob/main/Images/Step2.JPG)
 
 Then, open the `ClientApp.sln` and paste the URL in the `Program.cs` at the `fhirServelUrl` variable.
 
@@ -16,9 +16,9 @@ Note: The FHIR request itself will end up in a 404, but this is intentional as t
 
 Run the `ConsoleApp` and check the API project logs. You should see some requests fail with the below error.
 
-![Run client](./images/step3.jpg)
+![Run client](https://github.com/radupurdea/azure-healthdata-toolkit-stream-issue/blob/main/Images/Step3.JPG)
 
-![See error](./images/step4.jpg)
+![See error](https://github.com/radupurdea/azure-healthdata-toolkit-stream-issue/blob/main/Images/Step4.JPG)
 
 Stack trace:
 
